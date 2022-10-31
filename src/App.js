@@ -80,6 +80,7 @@ function App() {
           </div>
           <div className=' mt-3 mb-3'>
             <NameTitle> Annette Black</NameTitle>
+            <div id='slack' className='hidden' >zeek</div>
           </div>
         </div>
         <ProfileBoxContainer className=' pt-5 pb-5 md:pl-28 pl-6 md:pr-28 pr-6 '>
