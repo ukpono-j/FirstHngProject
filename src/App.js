@@ -90,6 +90,7 @@ function App() {
             <a href='https://training.zuri.team/' id='btn_zuri'>Zuri Team</a>
           </div>
           <div className='w-full md:h-16 h-12 mt-3 mb-3 rounded'>
+            
             <a href='http://books.zuri.team' id='books'>Zuri Books</a>
           </div>
           <div className='w-full md:h-16 h-12 mt-3 mb-3 rounded'>
