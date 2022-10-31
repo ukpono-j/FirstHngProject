@@ -83,23 +83,23 @@ function App() {
           </div>
         </div>
         <ProfileBoxContainer className=' pt-5 pb-5 md:pl-28 pl-6 md:pr-28 pr-6 '>
-          <div className=' w-full md:h-16 h-12 mt-3 mb-3 rounded'>
+          <div className=' w-full h-16  mt-3 mb-3 rounded'>
             <a href='https://twitter.com/0xzeek_'>Twitter Link</a>
           </div>
-          <div className=' w-full md:h-16 h-12 mt-3 mb-3 rounded'>
+          <div className=' w-full h-16  mt-3 mb-3 rounded'>
             <a href='https://training.zuri.team/' id='btn_zuri'>Zuri Team</a>
           </div>
-          <div className='w-full md:h-16 h-12 mt-3 mb-3 rounded'>
-            
+          <div className='w-full h-16  mt-3 mb-3 rounded'>
+
             <a href='http://books.zuri.team' id='books'>Zuri Books</a>
           </div>
-          <div className='w-full md:h-16 h-12 mt-3 mb-3 rounded'>
+          <div className='w-full h-16  mt-3 mb-3 rounded'>
             <a href='https://books.zuri.team/' id="book_python" >Python Books</a>
           </div>
-          <div className='w-full md:h-16 h-12 mt-3 mb-3 rounded'>
+          <div className='w-full h-16  mt-3 mb-3 rounded'>
             <a href='https://background.zuri.team' id='pitch'>Background Check for Coders</a>
           </div>
-          <div className='w-full md:h-16 h-12  mt-3 mb-3 rounded'>
+          <div className='w-full h-16   mt-3 mb-3 rounded'>
             <a href='https://books.zuri.team/design-rules' id='book_design'>Design Books</a>
           </div>
         </ProfileBoxContainer>
