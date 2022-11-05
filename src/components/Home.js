@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Img1 from "./images/profile__img.png";
+import Img1 from "./images/profile.jpg";
 import Slack from "./images/slack.png";
 import Github from "./images/Icon.png";
 import Forward1 from "./images/_Avatar share button.png";
@@ -57,7 +57,7 @@ function Home() {
                 </div>
                 <div className=' flex flex-col justify-center items-center'>
                     <div className=' md:w-20 w-16 md:h-20 h-16 rounded-full md:mt-20 mt-10'>
-                        <img src={Img1} alt="" className='w-full h-full object-cover ' id='profile__img' />
+                        <img src={Img1} alt="" className='w-full h-full object-cover rounded-full' id='profile__img' />
                     </div>
                     <div className=' mt-3 mb-3'>
                         <NameTitle> Annette Black</NameTitle>
@@ -66,10 +66,10 @@ function Home() {
                 </div>
                 <ProfileBoxContainer className=' pt-5 pb-5 md:pl-28 pl-6 md:pr-28 pr-6 '>
                     <div className=' w-full h-16  mt-3 mb-3 rounded'>
-                        <a href='https://twitter.com/0xzeek_' ><button id='twitter'>Twitter Link</button></a>
+                        <a href='https://twitter.com/0xzeek_'><button id='twitter'>Twitter Link</button></a>
                     </div>
                     <div className=' w-full h-16  mt-3 mb-3 rounded'>
-                        <a href='https://training.zuri.team/' ><button id='btn_zuri'>Zuri Team</button></a>
+                        <a href='https://training.zuri.team/'><button id='btn_zuri'>Zuri Team</button></a>
                     </div>
                     <div className='w-full h-16  mt-3 mb-3 rounded'>
                         <a href='http://books.zuri.team'><button  id='books'>Zuri Books</button></a>
@@ -85,7 +85,7 @@ function Home() {
                     </div>
                     <div className='w-full h-16   mt-3 mb-3 rounded'>
                         <Link to="/contact">
-                            <a href=''>
+                            <a>
                                 <button id='contact'>Contact Me</button>
                             </a>
                         </Link>
