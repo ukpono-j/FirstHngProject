@@ -30,13 +30,27 @@ const ProfileBoxContainer = styled.div`
    & div {
     background-color: #EAECF0;
     display: flex;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     font-family: "Inter", sans-serif;
     font-size: 15px;
-    font-weight: 500;
+    /* font-weight: 500; */
     text-align: center;
 
+    & h1{
+        font-family: "Inter", sans-serif;
+       font-size: 15px;
+      font-weight: 500;
+
+      @media screen and (max-width: 600px){
+        font-size: 14px;
+      }
+    }
+    & p{
+        font-family: "Inter", sans-serif;
+       font-size: 13px;
+    }
     @media screen and (max-width: 426px){
       font-size: 13px;
     }
@@ -71,29 +85,48 @@ function Home() {
                         <div id='slack' className='hidden' >zeek</div>
                     </div>
                 </div>
-                <ProfileBoxContainer className=' pt-5 pb-5 md:pl-28 pl-6 md:pr-28 pr-6 '>
-                    <div className=' w-full h-16  mt-3 mb-3 rounded'>
-                        <a className=' w-full h-16  mt-3 mb-3 flex rounded' href='https://twitter.com/0xzeek_'><button id='twitter' className='flex items-center justify-center'>Twitter Link</button></a>
+                <ProfileBoxContainer className=' pt-5 pb-5 md:pl-28 pl-3 md:pr-28 pr-3 '>
+                    <div className=' w-full h-20  mt-3 mb-3 rounded'>
+                        <a className=' w-full h-20  mt-3 mb-3 flex rounded' href='https://twitter.com/0xzeek_'><button id='twitter' className='flex items-center justify-center'>
+                             <h1>Twitter Link</h1>
+                            </button></a>
                     </div>
-                    <div className=' w-full h-16  mt-3 mb-3 rounded'>
-                        <a className=' w-full h-16  mt-3 mb-3 flex rounded'  href='https://training.zuri.team/'><button id='btn_zuri' className='flex items-center justify-center'>Zuri Team</button></a>
+                    <div className=' w-full h-20  mt-3 mb-3 rounded'>
+                        <a className=' w-full h-20  mt-3 mb-3 flex rounded'  href='https://training.zuri.team/'><button id='btn_zuri' className='flex items-center justify-center'>
+                            <h1>Zuri Team</h1>
+                            </button></a>
                     </div>
-                    <div className='w-full h-16  mt-3 mb-3 rounded'>
-                        <a className=' w-full h-16  mt-3 mb-3 flex rounded'  href='http://books.zuri.team'><button  id='books' className='flex items-center justify-center'>Zuri Books</button></a>
+                    <div className='w-full h-20  mt-3 mb-3 rounded'>
+                        <a className=' w-full h-20  mt-3 mb-3 flex rounded'  href='http://books.zuri.team'><button  id='books' className='flex flex-col items-center justify-center'>
+                             <h1>Zuri Books</h1>
+                             <p>Books on designs and coding</p>
+                            </button></a>
                     </div>
-                    <div className='w-full h-16  mt-3 mb-3 rounded'>
-                        <a className=' w-full h-16  mt-3 mb-3 flex rounded'  href='https://books.zuri.team/'><button id="book_python" className='flex items-center justify-center'>Python Books</button></a>
+                    <div className='w-full h-20  mt-3 mb-3 rounded'>
+                        <a className=' w-full h-20  mt-3 mb-3 flex rounded'  href='https://books.zuri.team/'><button id="book_python" className='flex flex-col items-center justify-center'>
+                             <h1>Python for beginners</h1>
+                             <p>Python made easy for you on  zeek</p>
+                            </button></a>
                     </div>
-                    <div className='w-full h-16  mt-3 mb-3 rounded'>
-                        <a className=' w-full h-16  mt-3 mb-3 flex rounded'  href='https://background.zuri.team' ><button id='pitch' className='flex items-center justify-center'>Background Check for Coders</button></a>
+                    <div className='w-full h-20  mt-3 mb-3 rounded'>
+                        <a className=' w-full h-20  mt-3 mb-3 flex rounded'  href='https://background.zuri.team' ><button id='pitch' className='flex flex-col items-center justify-center'>
+                            <h1>Background Check for Coders</h1>
+                            <p>Click to do background check on coders</p>
+                            </button></a>
                     </div>
-                    <div className='w-full h-16   mt-3 mb-3 rounded'>
-                        <a className=' w-full h-16  mt-3 mb-3 flex rounded'  href='https://books.zuri.team/design-rules'><button id='book_design' className='flex items-center justify-center'>Design Books</button></a>
+                    <div className='w-full h-20    mt-3 mb-3 rounded'>
+                        <a className=' w-full h-20  mt-3 mb-3 flex rounded'  href='https://books.zuri.team/design-rules'><button id='book_design' className='flex flex-col items-center justify-center'>
+                            <h1>Design Books</h1>
+                            <p>Easy step to step design guide on  zuri</p>
+                            </button></a>
                     </div>
-                    <div className='w-full h-16   mt-3 mb-3 rounded'>
+                    <div className='w-full h-20   mt-3 mb-3 rounded'>
                         <Link to="/contact" className=' w-full h-16  mt-3 mb-3 flex rounded' >
-                            <a className=' w-full h-16  flex rounded' >
-                                <button id='contact' className='flex items-center justify-center'>Contact Me</button>
+                            <a className=' w-full h-20 pb-3  flex rounded' >
+                                <button id='contact' className='flex flex-col items-center justify-center'>
+                                    <h1>Contact Me</h1>
+                                    <p>Hi there, contact me to ask me about anything you have in mind</p>
+                                </button>
                             </a>
                         </Link>
                     </div>
