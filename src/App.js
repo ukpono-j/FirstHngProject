@@ -1,7 +1,7 @@
 import React from 'react'
 import Contact from './components/Contact'
 import Home from './components/Home'
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 
 const App = () => {

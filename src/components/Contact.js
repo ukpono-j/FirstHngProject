@@ -168,7 +168,7 @@ const Contact = () => {
         email: Yup.string().required('Email id is mendatory').email(),
     })
     const formOptions = { resolver: yupResolver(yupValidation) }
-    const { register, handleSubmit, reset, formState } = useForm(formOptions)
+    const { register, handleSubmit,  formState } = useForm(formOptions)
     const { errors } = formState
     function onSubmit(data) {
         console.log(JSON.stringify(data, null, 4))

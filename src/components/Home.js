@@ -72,7 +72,6 @@ function Home() {
                         <a href='https://training.zuri.team/' ><button id='btn_zuri'>Zuri Team</button></a>
                     </div>
                     <div className='w-full h-16  mt-3 mb-3 rounded'>
-
                         <a href='http://books.zuri.team'><button  id='books'>Zuri Books</button></a>
                     </div>
                     <div className='w-full h-16  mt-3 mb-3 rounded'>
