@@ -184,27 +184,27 @@ const Contact = () => {
                 <Contact_Container>
                     <Contact_Area className=''>
                         {/* ============ TITLE AREA ========== */}
-                        <Contact_Title className='md:p-2 p-0'>
+                        <Contact_Title className='md:p-2 p-1'>
                             <h1>Contact Me</h1>
                             <p>Hi there, contact me to ask me about anything you have in mind.</p>
                         </Contact_Title>
                         {/* ============= Name Area ========== */}
                         <div className='md:flex grid mt-4'>
-                            <Contact_1 className='w-full  md:ml-2 md:mr-2 ml-0 mr-0 mt-2 mb-2'>
+                            <Contact_1 className='w-full md:p-0 p-1 md:ml-2 md:mr-2 ml-0 mr-0 mt-2 mb-2'>
                                 <h5>First Name</h5>
                                 <input type="text" placeholder="Enter your first name" id='first_name' />
                             </Contact_1>
-                            <Contact_1 className='w-full  md:ml-2 md:mr-2 ml-0 mr-0 mt-2 mb-2'>
+                            <Contact_1 className='w-full md:p-0 p-1 md:ml-2 md:mr-2 ml-0 mr-0 mt-2 mb-2'>
                                 <h5>Last Name</h5>
                                 <input type="text" placeholder="Enter your last name" id='last_name' />
                             </Contact_1>
                         </div>
                         {/* ============== THE EMAIL AREA ============= */}
-                        <EmailArea className='md:p-2 p-0'>
+                        <EmailArea className='md:p-2 p-1'>
                             <h5>Email</h5>
                             <input type="email" placeholder='yourname@email.com' className='border w-full' id='email' />
                         </EmailArea>
-                        <div className='md:p-2 p-0'>
+                        <div className='md:p-2 p-1'>
                             <h5>Message</h5>
                             {/*==========   this is the Textarea ========== */}
                             <textarea placeholder="Send me a message and I'll reply you as soon as possible..." id='message' className={`form-control ${errors.name ? 'is-invalid' : ''}`}
@@ -215,14 +215,14 @@ const Contact = () => {
                         </div>
 
                         {/* ========= Ckeckbox Area ========== */}
-                        <div className='flex md:items-center items-start md:p-2 p-0'>
+                        <div className='flex md:items-center items-start md:p-2 p-1'>
                             <input type="checkbox" className='w-4 h-4 rounded-lg' />
                             <CheckTxt className='pl-2'>
                                 <span>  You agree to providing your data to <span>{"name"}</span> who may contact you.</span>
                             </CheckTxt>
                         </div>
                         {/* ======== Submit  Button ========== */}
-                        <div className='md:p-2 p-0'>
+                        <div className='md:p-2 p-1'>
                             <button type="submit" className='border md:h-12 h-10 mt-4 mb-4' id='btn__submit' >Send Message</button>
                         </div>
                     </Contact_Area>
