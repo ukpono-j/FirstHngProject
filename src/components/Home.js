@@ -12,6 +12,13 @@ import Footer from './Footer';
 const AppContainer = styled.div`
      background-color: #FFFFFF;
 
+   & button{
+    /* border: 1px solid  red; */
+    width: 100%;
+    display: flex;
+   }
+
+
 `
 const NameTitle = styled.div`
   font-family: "Inter", sans-serif;
@@ -48,7 +55,7 @@ const Forward = styled.div`
 function Home() {
     return (
         <div className="App">
-            <AppContainer className='w-full min-h-full border-2'>
+            <AppContainer className='w-full min-h-full '>
                 <div className=' relative '>
                     <Forward className='forward_btn  absolute md:h-10 w-7 md:w-10 w-7  rounded-full'>
                         <img src={Forward1} className="md:flex hidden" alt='' />
@@ -66,27 +73,27 @@ function Home() {
                 </div>
                 <ProfileBoxContainer className=' pt-5 pb-5 md:pl-28 pl-6 md:pr-28 pr-6 '>
                     <div className=' w-full h-16  mt-3 mb-3 rounded'>
-                        <a href='https://twitter.com/0xzeek_'><button id='twitter'>Twitter Link</button></a>
+                        <a className=' w-full h-16  mt-3 mb-3 flex rounded' href='https://twitter.com/0xzeek_'><button id='twitter' className='flex items-center justify-center'>Twitter Link</button></a>
                     </div>
                     <div className=' w-full h-16  mt-3 mb-3 rounded'>
-                        <a href='https://training.zuri.team/'><button id='btn_zuri'>Zuri Team</button></a>
+                        <a className=' w-full h-16  mt-3 mb-3 flex rounded'  href='https://training.zuri.team/'><button id='btn_zuri' className='flex items-center justify-center'>Zuri Team</button></a>
                     </div>
                     <div className='w-full h-16  mt-3 mb-3 rounded'>
-                        <a href='http://books.zuri.team'><button  id='books'>Zuri Books</button></a>
+                        <a className=' w-full h-16  mt-3 mb-3 flex rounded'  href='http://books.zuri.team'><button  id='books' className='flex items-center justify-center'>Zuri Books</button></a>
                     </div>
                     <div className='w-full h-16  mt-3 mb-3 rounded'>
-                        <a href='https://books.zuri.team/'><button id="book_python">Python Books</button></a>
+                        <a className=' w-full h-16  mt-3 mb-3 flex rounded'  href='https://books.zuri.team/'><button id="book_python" className='flex items-center justify-center'>Python Books</button></a>
                     </div>
                     <div className='w-full h-16  mt-3 mb-3 rounded'>
-                        <a href='https://background.zuri.team' ><button id='pitch'>Background Check for Coders</button></a>
+                        <a className=' w-full h-16  mt-3 mb-3 flex rounded'  href='https://background.zuri.team' ><button id='pitch' className='flex items-center justify-center'>Background Check for Coders</button></a>
                     </div>
                     <div className='w-full h-16   mt-3 mb-3 rounded'>
-                        <a href='https://books.zuri.team/design-rules'><button id='book_design'>Design Books</button></a>
+                        <a className=' w-full h-16  mt-3 mb-3 flex rounded'  href='https://books.zuri.team/design-rules'><button id='book_design' className='flex items-center justify-center'>Design Books</button></a>
                     </div>
                     <div className='w-full h-16   mt-3 mb-3 rounded'>
-                        <Link to="/contact">
-                            <a>
-                                <button id='contact'>Contact Me</button>
+                        <Link to="/contact" className=' w-full h-16  mt-3 mb-3 flex rounded' >
+                            <a className=' w-full h-16  flex rounded' >
+                                <button id='contact' className='flex items-center justify-center'>Contact Me</button>
                             </a>
                         </Link>
                     </div>
