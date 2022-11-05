@@ -76,6 +76,7 @@ const Contact_Container = styled.div`
         font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
+        outline: none;
         font-size: 15px;
         line-height: 24px;
         padding: 10px;
@@ -84,7 +85,10 @@ const Contact_Container = styled.div`
             font-size: 14px;
         }
     }
-
+   /* & textarea:focus{
+    border: 1px solid #84CAFF !important;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+   } */
     & textarea::placeholder{
         color: #667085;
     }
@@ -207,7 +211,7 @@ const Contact = () => {
                         <div className='md:p-2 p-1'>
                             <h5>Message</h5>
                             {/*==========   this is the Textarea ========== */}
-                            <textarea placeholder="Send me a message and I'll reply you as soon as possible..." id='message' className={`form-control ${errors.name ? 'is-invalid' : ''}`}
+                            <textarea  placeholder="Send me a message and I'll reply you as soon as possible..." id='message' className={`form-control ${errors.name ? 'is-invalid' : ''}`}
                                 {...register('name')}
                             />
                             {/* ===== Error Message area ========== */}
